@@ -10,7 +10,7 @@ import { Eye, EyeOff } from "lucide-react";
 const App: React.FC = () => {
   const editorRef = useRef<HTMLDivElement | null>(null);
   const viewRef = useRef<EditorView | null>(null);
-  const [hidden, setHidden] = useState<boolean>(true);
+  const [hidden, setHidden] = useState<boolean>(false);
   const maskCompartment = useRef(new Compartment()).current;
 
   useEffect(() => {

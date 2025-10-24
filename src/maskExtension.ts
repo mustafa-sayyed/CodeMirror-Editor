@@ -5,6 +5,7 @@ import {
   ViewPlugin,
   ViewUpdate,
   WidgetType,
+  type DecorationSet,
 } from "@codemirror/view";
 
 class maskCharWidget extends WidgetType {
@@ -16,6 +17,10 @@ class maskCharWidget extends WidgetType {
     el.style.pointerEvents = "none"
 
     return el;
+  }
+
+  eq(otherWidget: maskCharWidget) {
+    return otherWidget instanceof maskCharWidget;
   }
 }
 
