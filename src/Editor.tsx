@@ -4,7 +4,7 @@ import { oneDark } from "@codemirror/theme-one-dark";
 import { basicSetup, EditorView } from "codemirror";
 import React, { useEffect, useRef } from "react";
 
-const initialText = "// Hello World \n// Write your code here... \n\nconsole.log('Made with Curiousity by Mustafa Sayyed')
+const initialText = `// Hello World \n// Write your code here... \n\nconsole.log('Made with Curiousity by Mustafa Sayyed')
 
 
 #include <stdio.h> #include <stdlib.h>
@@ -62,7 +62,7 @@ return 0;
 }
 
 
-" + "\n".repeat(5);
+` + "\n".repeat(5);
 
 const Editor: React.FC = () => {
   const editorRef = useRef<HTMLDivElement | null>(null);
